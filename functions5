@@ -1,0 +1,31 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+void swap(int x, int y);
+
+int main() {
+	int a = 100;
+	int b = 200;
+
+	cout << "Before swap, value of a :" << a << endl;
+	cout << "Before swap, calue of b :" << b << endl;
+
+	swap(a,b);
+
+	cout << "After swap, value of a :" << a << endl;
+	cout << "After swap, value of b :" << b << endl;
+
+	getch();
+	return 0;
+}
+
+void swap(int x, int y) {
+	int temp;
+
+	temp = x; 
+	x = y;
+	y = temp;
+
+	return;
+}
